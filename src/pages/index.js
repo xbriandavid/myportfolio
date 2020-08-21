@@ -13,8 +13,6 @@ const IndexPage = () => (
       <SEO title="Brian David" />
       <NameDisplay />
     </Intro>
-    <Portfoliodisplay />
-    <Positions />
   </div>
 )
 
