@@ -1,3 +1,10 @@
+#___gatsby{
+  height: 100vh;
+}
+#gatsby-focus-wrapper{
+  height: 100vh;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -618,5 +625,129 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+header{
+  height: 5%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 85% 15%;
+  min-width: 600px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins&display=swap');
+#about-me-link{
+  font-family: 'Poppins', sans-serif;  
+  font-size: 24px;
+  color: #D3D4D6;
+}
+
+#index-page{
+  position: relative;
+  height: 100%;
+}
+
+#opening-intro{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+}
+#opening-caption{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+#button-cloud{
+  min-width: 600px;
+}
+
+svg{
+  font-size: 72px;
+}
+hr.rounded {
+  border-top: 1px solid #e3e3e3;
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#project1{
+  position: relative;
+  width: 401px;
+  height: 444px;
+  left: 303px;
+  top: 81px;
+  border: 1px solid;
+}
+
+#down-arrow svg{
+  font-size: 48px;
+}
+
+.portfolio-item{
+  height: 450px;
+  box-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.portfolio-item-grid{
+  display: grid;
+  grid-template-rows: 300px 150px;
+}
+.protfolio-item-desc{
+}
+
+#testcard{
+  font-family:'Poppins';
+  font-size: 1.35em;
+  line-height: 115%;
+}
+
+.tag-table{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 28px 28px;
+  margin-top: 10px;
+  margin-left: 10px;
+  row-gap: 10px;
+}
+.tag-item{
+  width: 65px;
+  border: 1px solid;
+  text-align: center;
+  font-family: 'Poppins', 'sans-serif';
+  border-radius: 3px;
+}
+
+.empty-tag-item{
+  width: 71px;
+}
+
+@media only screen and (max-width:1800px){
+  #portfolio-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: 450px 450px 450px;
+    gap:80px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width:1600px){
+  #portfolio-grid{
+    display: grid;
+    grid-template-columns: 450px 450px;
+    gap:0px 80px;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    justify-content: center;
   }
 }

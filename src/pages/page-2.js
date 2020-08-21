@@ -1,16 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Intro from "../components/intro"
 import SEO from "../components/seo"
 
 const SecondPage = () => (
-  <Layout>
+  <Intro>
     <SEO title="Page two" />
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>
     <Link to="/">Go back to the homepage</Link>
-  </Layout>
+  </Intro>
 )
 
 export default SecondPage
