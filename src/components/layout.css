@@ -691,63 +691,103 @@ hr.rounded {
   font-size: 48px;
 }
 
-.portfolio-item{
-  height: 450px;
-  box-shadow:2px 2px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.portfolio-item-grid{
-  display: grid;
-  grid-template-rows: 300px 150px;
-}
-.protfolio-item-desc{
-}
-
 #testcard{
   font-family:'Poppins';
   font-size: 1.35em;
   line-height: 115%;
 }
 
-.tag-table{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: 28px 28px;
-  margin-top: 10px;
-  margin-left: 10px;
-  row-gap: 10px;
-}
-.tag-item{
-  width: 65px;
-  border: 1px solid;
+.github-tag-item{
+  width: 100px;
   text-align: center;
   font-family: 'Poppins', 'sans-serif';
-  border-radius: 3px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(193,172,201,1) 0%, rgba(203,180,212,1) 53%, rgba(193,172,201,1) 100%);
+
 }
 
 .empty-tag-item{
   width: 71px;
 }
 
-@media only screen and (max-width:1800px){
+span svg{
+  font-size:1.5em;
+  padding-left: 5px;
+  padding-top:5px;
+}
+
+@media (max-width:1800px){
   #portfolio-grid{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-rows: 450px 450px;
     grid-template-columns: 450px 450px 450px;
     gap:80px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
     justify-content: center;
   }
 }
-@media only screen and (max-width:1600px){
+@media (max-width:1600px){
   #portfolio-grid{
     display: grid;
     grid-template-columns: 450px 450px;
-    gap:0px 80px;
+    grid-template-rows: 450px 450px;
+    gap:80px 80px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    justify-content: center;
+  }
+
+  .portfolio-item{
+    height: 450px;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.30), -2px -2px 2px rgba(0, 0, 0, 0.30);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .portfolio-item-grid{
+    display: grid;
+    grid-template-rows: 300px 150px;
+  }
+
+  .tag-table{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 28px 28px;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+
+  .tag-item{
+    width: 100px;
+    border: 1px solid;
+    text-align: center;
+    font-family: 'Poppins', 'sans-serif';
+    border-radius: 12px;
+  }
+
+  #portfolio-display{
+    height: 1650px;
+    display: grid;
+  }
+
+}
+
+@media only screen and (max-device-width: 430px){
+  #portfolio-grid{
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-rows: px 360px 360px 360px;
+    gap:60px 0px;
     margin-top: 5%;
     margin-left: 4%;
-    margin-bottom: 2%;
+    margin-right: 4%;
     justify-content: center;
   }
 }

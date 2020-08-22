@@ -5,7 +5,7 @@ import Intro from "../components/intro"
 import SEO from "../components/seo"
 import NameDisplay from "../components/namedisplay"
 import Portfoliodisplay from '../components/portfoliodisplay'
-import Positions from '../components/positions'
+//import Positions from '../components/positions'
 
 const IndexPage = () => (
   <div id="index-page">
@@ -14,7 +14,6 @@ const IndexPage = () => (
       <NameDisplay />
     </Intro>
     <Portfoliodisplay />
-    <Positions />
   </div>
 )
 
