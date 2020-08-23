@@ -719,6 +719,10 @@ hr.rounded {
   font-size: 48px;
 }
 
+.portfolio-item:hover{
+  box-shadow:3px 3px 9px rgba(0, 0, 0, 0.30), -3px -3px 9px rgba(0, 0, 0, 0.30);
+}
+
 #testcard{
   font-family:'Poppins';
   font-size: 1.35em;
@@ -744,12 +748,23 @@ span svg{
   padding-top:5px;
 }
 
+.tag-font{
+  font-size: 0.9em;
+}
+.github-tag-font{
+  font-size:0.9em;
+  text-decoration: underline;
+}
+/*================== 1800 max pixels *===================*/
 @media (max-width:1800px){
   #opening-intro{
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 96px;
+  }
+  #opening-intro-mobile{
+    display: none;
   }
 
   #portfolio-grid{
@@ -763,7 +778,36 @@ span svg{
     margin-right: 4%;
     justify-content: center;
   }
+  .portfolio-item-grid{
+    display: grid;
+    grid-template-rows: 300px 150px;
+  }
+  .portfolio-item{
+    height: 450px;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.30), -2px -2px 2px rgba(0, 0, 0, 0.30);
+    border-radius: 9px;
+    overflow: hidden;
+  }
+  .tag-table{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 28px 28px;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+  .tag-item{
+    width: 100px;
+    border: 1px solid;
+    text-align: center;
+    font-family: 'Poppins', 'sans-serif';
+    border-radius: 12px;
+  }
 }
+
+
+/*================== 1600 max pixels *===================*/
 @media (max-width:1600px){
   #index-page{
     position: relative;
@@ -793,7 +837,7 @@ span svg{
   .portfolio-item{
     height: 450px;
     box-shadow:2px 2px 2px rgba(0, 0, 0, 0.30), -2px -2px 2px rgba(0, 0, 0, 0.30);
-    border-radius: 12px;
+    border-radius: 9px;
     overflow: hidden;
   }
 
@@ -814,20 +858,19 @@ span svg{
 
   .tag-item{
     width: 100px;
-    border: 1px solid;
     text-align: center;
     font-family: 'Poppins', 'sans-serif';
-    border-radius: 12px;
+    background:#D4D4D4
   }
 
   #portfolio-display{
-    height: 1650px;
+    height: 1200px;
     display: grid;
   }
 
 }
 
-/*=====For Mobile Devices*=====*/
+/*==================For Mobile Devices*===================*/
 
 @media only screen and (max-device-width: 414px){
   header{
@@ -939,5 +982,35 @@ span svg{
     gap:200px 0px;
     margin-top: 5%;
     justify-content: center;
+  }
+
+  .portfolio-item{
+    height: 450px;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.30), -2px -2px 2px rgba(0, 0, 0, 0.30);
+    border-radius: 9px;
+    overflow: hidden;
+  }
+
+  .tag-table{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 28px 28px;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+  .tag-item{
+    width: 60px;
+    text-align: center;
+    font-family: 'Poppins', 'sans-serif';
+    background:#D4D4D4
+  }
+  .tag-font{
+    font-size: 0.9em;
+  }
+  .github-tag-font{
+    font-size:0.9em;
+    text-decoration: underline;
   }
 }

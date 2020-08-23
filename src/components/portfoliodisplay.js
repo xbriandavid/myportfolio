@@ -12,7 +12,7 @@ const Portfoliodisplay = () => {
                     <div className="portfolio-item">
                         <div className="portfolio-item-grid">
                             <div>
-                                <img src={covid} alt="covid19proj" height="300" width="450"/>
+                                <img id = "image1" src={covid} alt="covid19proj" height="300" width="450"/>
                             </div>
                             <div className="protfolio-item-desc">
                                 <div style={{paddingLeft:'0.5em', marginTop:'5px'}}>
@@ -21,25 +21,25 @@ const Portfoliodisplay = () => {
                                 </div>
                                 <div className="tag-table">
                                     <div className="tag-item">
-                                        <p style = {{fontSize:'0.9em'}}>HTML</p>
+                                        <p class="tag-font">HTML</p>
                                     </div>
                                     <div className="tag-item">
-                                        <p style = {{fontSize:'0.9em'}}>CSS</p>
+                                        <p class="tag-font">CSS</p>
                                     </div>
                                     <div className="tag-item">
-                                        <p style = {{fontSize:'0.9em'}}>React</p>
+                                        <p class="tag-font">React</p>
                                     </div>
                                     <div className="tag-item">
-                                        <p style = {{fontSize:'0.9em'}}>Django</p>
+                                        <p class="tag-font">Django</p>
                                     </div>
                                     <div className="tag-item">
-                                        <p style = {{fontSize:'0.9em'}}>SQL</p>
+                                        <p class="tag-font">SQL</p>
                                     </div>
                                     <div className="tag-item">
-                                        <p style = {{fontSize:'0.9em'}}>D3.js</p>
+                                        <p class="tag-font">D3.js</p>
                                     </div>
                                     <div className="github-tag-item">
-                                        <p style = {{fontSize:'0.9em', textDecoration: 'underline'}}>Github</p>
+                                        <p className="github-tag-font">Github</p>
                                     </div>
                                 </div>
                             </div>
@@ -57,13 +57,13 @@ const Portfoliodisplay = () => {
                                     </div>
                                     <div className="tag-table">
                                         <div className="tag-item">
-                                            <p style = {{fontSize:'0.9em'}}>Python</p>
+                                            <p class="tag-font">Python</p>
                                         </div>
                                         <div className="tag-item">
-                                            <p style = {{fontSize:'0.9em'}}>CSS</p>
+                                            <p class="tag-font">CSS</p>
                                         </div>
                                         <div className="github-tag-item">
-                                            <p style = {{fontSize:'0.9em', textDecoration: 'underline'}}>Github</p>
+                                            <p className="github-tag-font">Github</p>
                                         </div>
                                     </div>
                                 </div>
@@ -81,10 +81,10 @@ const Portfoliodisplay = () => {
                                     </div>
                                     <div className="tag-table">
                                         <div className="tag-item">
-                                            <p style = {{fontSize:'0.9em'}}>Java</p>
+                                            <p class="tag-font">Java</p>
                                         </div>
                                         <div className="github-tag-item">
-                                            <p style = {{fontSize:'0.9em', textDecoration: 'underline'}}>Github</p>
+                                            <p className="github-tag-font">Github</p>
                                         </div>
                                     </div>
                                 </div>
@@ -102,10 +102,10 @@ const Portfoliodisplay = () => {
                                     </div>
                                     <div className="tag-table">
                                         <div className="tag-item">
-                                            <p style = {{fontSize:'0.9em'}}>Java</p>
+                                            <p class="tag-font">Java</p>
                                         </div>
                                         <div className="tag-item">
-                                            <p style = {{fontSize:'0.9em'}}>CSS</p>
+                                            <p class="tag-font">CSS</p>
                                         </div>
                                         <div className="empty-tag-item">
                                             <p style = {{fontSize:'0.7em'}}></p>
