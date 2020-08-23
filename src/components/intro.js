@@ -31,13 +31,6 @@ const Intro = ({ children }) => {
       
       <div
         id = "intro-container"
-        style={{height:'150px',
-        position:'absolute',
-        top:'54%',
-        marginTop:'-110px',
-        left:'100px'
-        
-        }}
       >
         <main style = {{overflowWrap:'normal'}}>{children}</main>
       </div>

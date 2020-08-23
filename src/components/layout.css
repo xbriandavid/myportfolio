@@ -637,17 +637,26 @@ header{
   min-width: 600px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins&display=swap');
 #about-me-link{
-  font-family: 'Poppins', sans-serif;  
-  font-size: 24px;
-  color: #D3D4D6;
+  transform: translateY(35%);
 }
 
-#index-page{
-  position: relative;
-  height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins&display=swap');
+
+
+#name-display{
+  width:804px;
+  height:105px;
+  text-align:left;
+}
+
+#intro-container{
+  height:150px;
+  position:absolute;
+  top:54%;
+  margin-top:-110px;
+  left:100px;
 }
 
 #opening-intro{
@@ -655,6 +664,12 @@ header{
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
+}
+
+#opening-desc{
+  width:556px;
+  height:50px;
+  text-align:left;
 }
 #opening-caption{
   font-family: Poppins;
@@ -730,6 +745,11 @@ span svg{
   }
 }
 @media (max-width:1600px){
+  #index-page{
+    position: relative;
+    height: 100%;
+  }
+
   #portfolio-grid{
     display: grid;
     grid-template-columns: 450px 450px;
@@ -779,15 +799,71 @@ span svg{
 
 }
 
-@media only screen and (max-device-width: 430px){
+/*=====For Mobile Devices*=====*/
+
+@media only screen and (max-device-width: 400px){
+  header{
+    width: 100vw;
+  }
+
+  #index-page{
+    height: 100%;
+    width: 100%;
+  }
+
+  .grid{
+    font-size: 35px;
+    display: grid;
+    grid-template-rows: 0px 50px;
+    grid-template-columns: 150px;
+    border:1px solid;
+  }
+
+  #fillerDiv{
+    width: 0px;
+    height: 0px;
+  }
+
+  #about-me-link{
+    transform: translateY(100%);
+  }
+
+  #opening-desc{
+    border:1px solid;
+    width:300px;
+    height:130px;
+    text-align:left;
+  }
+
+  #name-display{
+    display: absolute;
+    width:300px;
+    height:105px;
+    text-align:left;
+    border:1px solid;
+  }
+
+  #opening-intro{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+  }
+
+  #portfolio-display{
+    height: 2100px;
+    display: grid;
+    border:1px solid;
+  }
+
   #portfolio-grid{
     display: grid;
-    grid-template-columns: 360px;
-    grid-template-rows: px 360px 360px 360px;
+    grid-template-columns: 300px;
+    grid-template-rows: px 300px 300px 300px;
     gap:60px 0px;
     margin-top: 5%;
-    margin-left: 4%;
-    margin-right: 4%;
+    /*margin-left: 4%;
+    margin-right: 4%;*/
     justify-content: center;
   }
 }
