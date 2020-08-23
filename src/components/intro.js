@@ -42,6 +42,9 @@ const Intro = ({ children }) => {
           <IoLogoGithub />
         </div>
       </div>
+      <div id ="mobile-about-me">
+        <span>About me</span>
+      </div>
     </div>
   )
 }

@@ -659,12 +659,6 @@ header{
   left:100px;
 }
 
-#opening-intro{
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
-}
 
 #opening-desc{
   width:556px;
@@ -708,6 +702,10 @@ hr.rounded {
   margin-top:-115px;
 }
 
+#mobile-about-me{
+  display: none;
+}
+
 #project1{
   position: relative;
   width: 401px;
@@ -747,6 +745,13 @@ span svg{
 }
 
 @media (max-width:1800px){
+  #opening-intro{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+  }
+
   #portfolio-grid{
     display: grid;
     grid-template-rows: 450px 450px;
@@ -764,7 +769,15 @@ span svg{
     position: relative;
     height: 100%;
   }
-
+  #opening-intro{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+  }
+  #opening-intro-mobile{
+    display: none;
+  }
   #portfolio-grid{
     display: grid;
     grid-template-columns: 450px 450px;
@@ -816,9 +829,10 @@ span svg{
 
 /*=====For Mobile Devices*=====*/
 
-@media only screen and (max-device-width: 400px){
+@media only screen and (max-device-width: 414px){
   header{
     width: 100vw;
+    display: none;
   }
 
   #index-page{
@@ -846,7 +860,7 @@ span svg{
   #intro-container{
     left: 0px;
     width: 100vw;
-    top: calc(17%);
+    top: calc(15%);
     margin-top: 0px;
     height: 37%;
   }
@@ -855,13 +869,13 @@ span svg{
     width:100vw;
     height:130px;
     text-align:left;
-    padding-left: 5%;
+    padding-left: 3%;
   }
 
   #name-display{
     width:100vw;
     height:21%;
-    padding-left: 5%;
+    padding-left: 3%;
   }
 
   #opening-caption{
@@ -877,6 +891,7 @@ span svg{
   }
 
   #opening-intro-mobile{
+    display: block;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
@@ -885,31 +900,44 @@ span svg{
 
   #github-button{
     position:absolute;
-    left:calc(31%);
+    left:calc(26.57%);
     top:57%;
-    top: calc(100% - 5%);
+    top: calc(100% - 15%);
   }
 
   #linkedin-button{
     position:absolute;
-    left: calc(51%);
-    top: calc(100% - 5%);
+    left: calc(56.04%);
+    top: calc(100% - 15%);
+  }
+
+  #mobile-about-me{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    width:100vw;
+    color: #747474;
+    text-align: center;
+  }
+
+  #mobile-about-me span{
+    text-decoration: underline;
   }
 
   #portfolio-display{
     height: 2100px;
-    display: grid;
-    border:1px solid;
   }
 
   #portfolio-grid{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: px 300px 300px 300px 300px;
-    gap:60px 0px;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap:200px 0px;
     margin-top: 5%;
-    /*margin-left: 4%;
-    margin-right: 4%;*/
     justify-content: center;
   }
 }

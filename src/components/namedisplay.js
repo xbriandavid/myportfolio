@@ -6,7 +6,7 @@ const NameDisplay = () => {
             <div id="name-display">
                 <h4 id = 'opening-intro'>Hi, I'm Brian!</h4>
                 <h4 id = "opening-intro-mobile">Hi!</h4>
-                <h4 id = "opening-intro-mobile">I'm Brian!</h4>
+                <h4 id = "opening-intro-mobile">I'm Brian</h4>
             </div>
             <div id="opening-desc">
                 <h4 id = 'opening-caption'>Lorem ipsum dolor sit amet, consectetur 
