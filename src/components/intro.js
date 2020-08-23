@@ -29,30 +29,16 @@ const Intro = ({ children }) => {
     }}>
       <Header siteTitle={data.site.siteMetadata.title} />
       
-      <div
-        id = "intro-container"
-      >
+      <div id = "intro-container">
         <main style = {{overflowWrap:'normal'}}>{children}</main>
       </div>
 
       
       <div id = "button-cloud">
-        <div id = "linkedin-button" style = {{
-          position:'absolute',
-          left:'87.29%',
-          right:'7.71%',
-          top:'57%',
-          marginTop:'-115px',
-        }}>
+        <div id = "linkedin-button">
           <IoLogoLinkedin />
         </div>
-        <div id = "github-button" style = {{
-          position:'absolute',
-          left:'75.56%',
-          right:'19.44%',
-          top:'57%',
-          marginTop:'-115px'
-        }}>
+        <div id="github-button">
           <IoLogoGithub />
         </div>
       </div>

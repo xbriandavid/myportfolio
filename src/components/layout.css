@@ -693,6 +693,21 @@ hr.rounded {
   margin-right: 5%;
 }
 
+#linkedin-button{
+  position:absolute;
+  left:87.29%;
+  right:7.71%;
+  top:57%;
+  margin-top:-115px;
+}
+#github-button{
+  position:absolute;
+  left:75.56%;
+  right:19.44%;
+  top:57%;
+  margin-top:-115px;
+}
+
 #project1{
   position: relative;
   width: 401px;
@@ -816,7 +831,7 @@ span svg{
     display: grid;
     grid-template-rows: 0px 50px;
     grid-template-columns: 150px;
-    border:1px solid;
+    min-width: 100vw;
   }
 
   #fillerDiv{
@@ -828,26 +843,57 @@ span svg{
     transform: translateY(100%);
   }
 
+  #intro-container{
+    left: 0px;
+    width: 100vw;
+    top: calc(17%);
+    margin-top: 0px;
+    height: 37%;
+  }
+
   #opening-desc{
-    border:1px solid;
-    width:300px;
+    width:100vw;
     height:130px;
     text-align:left;
+    padding-left: 5%;
   }
 
   #name-display{
-    display: absolute;
-    width:300px;
-    height:105px;
-    text-align:left;
-    border:1px solid;
+    width:100vw;
+    height:21%;
+    padding-left: 5%;
   }
 
-  #opening-intro{
+  #opening-caption{
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 38px;
+    font-size: 16px;
+    padding-left: 0px;
+  }
+
+  #opening-intro{
+    display: none;
+  }
+
+  #opening-intro-mobile{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+  }
+
+  #github-button{
+    position:absolute;
+    left:calc(31%);
+    top:57%;
+    top: calc(100% - 5%);
+  }
+
+  #linkedin-button{
+    position:absolute;
+    left: calc(51%);
+    top: calc(100% - 5%);
   }
 
   #portfolio-display{
@@ -859,7 +905,7 @@ span svg{
   #portfolio-grid{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: px 300px 300px 300px;
+    grid-template-rows: px 300px 300px 300px 300px;
     gap:60px 0px;
     margin-top: 5%;
     /*margin-left: 4%;
