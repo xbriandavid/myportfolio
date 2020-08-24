@@ -9,42 +9,47 @@ const Portfoliodisplay = () => {
             <hr className="rounded"/>
             <div id="portfolio-display">
                 <div id = "portfolio-grid">
-                    <div className="portfolio-item">
-                        <div className="portfolio-item-grid">
-                            <div>
-                                <img id = "image1" src={covid} alt="covid19proj" height="300" width="450"/>
-                            </div>
-                            <div className="protfolio-item-desc">
-                                <div style={{paddingLeft:'0.5em', marginTop:'5px'}}>
-                                    <span id = "testcard" role="img" aria-label="emoji">Exploring Daily Changes in Bay Area Covid-19 Cases
-                                    </span>
+                    <a>
+                        <div className="portfolio-item">
+                            <div className="portfolio-item-grid">
+                                <div>
+                                    <a href="http://covid-bayarea.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                    <img id = "image1" src={covid} alt="covid19proj" height="300" width="450"/>
+                                    </a>
+                                
                                 </div>
-                                <div className="tag-table">
-                                    <div className="tag-item">
-                                        <p class="tag-font">HTML</p>
+                                <div className="protfolio-item-desc">
+                                    <div style={{paddingLeft:'0.5em', marginTop:'5px'}}>
+                                        <span id = "testcard" role="img" aria-label="emoji">Exploring Daily Changes in Bay Area Covid-19 Cases
+                                        </span>
                                     </div>
-                                    <div className="tag-item">
-                                        <p class="tag-font">CSS</p>
-                                    </div>
-                                    <div className="tag-item">
-                                        <p class="tag-font">React</p>
-                                    </div>
-                                    <div className="tag-item">
-                                        <p class="tag-font">Django</p>
-                                    </div>
-                                    <div className="tag-item">
-                                        <p class="tag-font">SQL</p>
-                                    </div>
-                                    <div className="tag-item">
-                                        <p class="tag-font">D3.js</p>
-                                    </div>
-                                    <div className="github-tag-item">
-                                        <p className="github-tag-font">Github</p>
+                                    <div className="tag-table">
+                                        <div className="tag-item">
+                                            <p class="tag-font">HTML</p>
+                                        </div>
+                                        <div className="tag-item">
+                                            <p class="tag-font">CSS</p>
+                                        </div>
+                                        <div className="tag-item">
+                                            <p class="tag-font">React</p>
+                                        </div>
+                                        <div className="tag-item">
+                                            <p class="tag-font">Django</p>
+                                        </div>
+                                        <div className="tag-item">
+                                            <p class="tag-font">SQL</p>
+                                        </div>
+                                        <div className="tag-item">
+                                            <p class="tag-font">D3.js</p>
+                                        </div>
+                                        <div className="github-tag-item">
+                                            <p className="github-tag-font">Github</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <div className="portfolio-item">
                         <div className="portfolio-item-grid">
                                 <div>
