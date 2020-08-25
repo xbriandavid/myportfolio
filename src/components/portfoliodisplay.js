@@ -5,7 +5,7 @@ import predpreysim from '../images/predprayprj.png'
 import devinnunes from '../images/devinnunes.png'
 const Portfoliodisplay = () => {
     return (
-        <div>
+        <div style = {{background:'#f2f2f2'}}>
             <hr className="rounded"/>
             <div id="portfolio-display">
                 <div id = "portfolio-grid">

@@ -27,7 +27,9 @@ const Intro = ({ children }) => {
     <div id = "first-container"style={{
       height:'100vh'
     }}>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} 
+              navLabel = "about"
+              toAddress = "/about/"/>
       
       <div id = "intro-container">
         <main style = {{overflowWrap:'normal'}}>{children}</main>

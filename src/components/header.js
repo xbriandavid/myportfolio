@@ -1,14 +1,16 @@
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import "./layout.css"
 
-const Header = ({ siteTitle }) => (
+const Header = ({navLabel, toAddress}) => (
   <header>
     <div class = "grid">
       <div class = "fillerDiv"></div>
       <div id="about-me-link">
-        <h3>About Me</h3>
+        <Link to={toAddress} style={{textDecoration:'none'}}>
+        <h3 id="about-link">{navLabel}</h3>
+        </Link>
       </div>
     </div>
   </header>
@@ -16,10 +18,14 @@ const Header = ({ siteTitle }) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  navLabel:PropTypes.string.isRequired,
+  toAddress:PropTypes.string,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  navLabel:''
 }
+
 
 export default Header

@@ -1,16 +1,14 @@
 import React from 'react'
-import Intro from "../components/intro"
 import SEO from "../components/seo"
+import Header from '../components/header'
 
 const about = () => {
     return (
-        <Intro>
+        <div>
             <SEO title = "About"/>
-            <div>
-                <h1>About Me</h1>
-            </div>
-        </Intro>
+            <Header navLabel = "home" toAddress = "/"/>
+        </div>
     )
 }
 
-export default about
+export default about 
