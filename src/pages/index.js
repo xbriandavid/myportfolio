@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import NameDisplay from "../components/namedisplay"
 import Portfoliodisplay from '../components/portfoliodisplay'
 //import Positions from '../components/positions'
-import $ from 'jquery'
 
 
 const IndexPage = () => (
