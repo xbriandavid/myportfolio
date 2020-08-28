@@ -4,7 +4,10 @@ const NameDisplay = () => {
     return (
         <div>
             <div id="name-display">
-                <h4 id = 'opening-intro'>hi, i'm brian!</h4>
+                <h4 id = 'opening-intro'>
+                    <span>hi i'm </span>
+                    <span style={{color:'#41AAC4'}}>brian!</span>
+                </h4>
                 <h4 id = "opening-intro-mobile">hi!</h4>
                 <h4 id = "opening-intro-mobile">i'm brian</h4>
             </div>

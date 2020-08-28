@@ -5,7 +5,7 @@ import predpreysim from '../images/predprayprj.png'
 import devinnunes from '../images/devinnunes.png'
 const Portfoliodisplay = () => {
     return (
-        <div style = {{background:'#f2f2f2'}}>
+        <div style = {{background:'#fafafa'}}>
             <hr className="rounded"/>
             <div id="portfolio-display">
                 <div id = "portfolio-grid">
@@ -19,7 +19,7 @@ const Portfoliodisplay = () => {
                                 
                                 </div>
                                 <div className="protfolio-item-desc">
-                                    <div style={{paddingLeft:'0.5em', marginTop:'5px'}}>
+                                    <div style={{paddingLeft:'1.5em', marginTop:'12px'}}>
                                         <span id = "testcard" role="img" aria-label="emoji">Exploring Daily Changes in Bay Area Covid-19 Cases
                                         </span>
                                     </div>
@@ -56,7 +56,7 @@ const Portfoliodisplay = () => {
                                     <img src={waterProject} alt="covid19proj" height="300" width="450"/>
                                 </div>
                                 <div className="protfolio-item-desc">
-                                    <div style={{paddingLeft:'0.5em', marginTop:'5px'}}>
+                                    <div style={{paddingLeft:'1em', marginTop:'12px'}}>
                                         <span id = "testcard" role="img" aria-label="emoji">Analyzing Sediment Constituents in the San Francisco Bay
                                         </span>
                                     </div>
@@ -80,7 +80,7 @@ const Portfoliodisplay = () => {
                                     <img src={predpreysim} alt="covid19proj" height="300" width="450"/>
                                 </div>
                                 <div className="protfolio-item-desc">
-                                    <div style={{paddingLeft:'0.5em', marginTop:'5px'}}>
+                                    <div style={{paddingLeft:'1.5em', marginTop:'12px'}}>
                                         <span id = "testcard" role="img" aria-label="emoji">Modeling a Predator and Prey Simulation
                                         </span>
                                     </div>
@@ -101,8 +101,8 @@ const Portfoliodisplay = () => {
                                     <img src={devinnunes} alt="covid19proj" height="300" width="450"/>
                                 </div>
                                 <div className="protfolio-item-desc">
-                                    <div style={{paddingLeft:'0.5em', marginTop:'5px'}}>
-                                        <span id = "testcard" role="img" aria-label="emoji">Analyzing Sediment Constituents in the San Francisco Bay
+                                    <div style={{paddingLeft:'1.5em', marginTop:'12px'}}>
+                                        <span id = "testcard" role="img" aria-label="emoji">CA-22 2018 Election
                                         </span>
                                     </div>
                                     <div className="tag-table">

@@ -643,7 +643,7 @@ header{
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 #name-display{
   width:804px;
@@ -651,12 +651,24 @@ header{
   text-align:left;
 }
 
+
 #intro-container{
   height:150px;
   position:absolute;
   top:54%;
   margin-top:-110px;
   left:100px;
+  animation: fadein 1s;
+}
+@keyframes fadein{
+  from{
+    opacity: 0;
+    margin-top:-85px;
+  }
+  to{
+    opacity: 1;
+    margin-top:-110px;
+  }
 }
 
 
@@ -666,12 +678,13 @@ header{
   text-align:left;
 }
 #opening-caption{
-  font-family: Poppins;
+  font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  padding-left: 10px;
+  padding-left: 6px;
   line-height: 152%;
+  letter-spacing: 1.2px;
 }
 
 #button-cloud{
@@ -681,14 +694,23 @@ header{
 svg{
   font-size: 72px;
 }
-hr.rounded {
+
+.rounded {
   border-top: 1px solid #e3e3e3;
   border-radius: 5px;
   margin-left: 5%;
   margin-right: 5%;
 }
 #about-link{
-  color: #b4b4b4
+  color: black;
+  font-size: 24px;
+  font-family: 'Inter', 'sans-serif';
+  transition: 425ms ease
+}
+
+#about-link:hover{
+  color:#41AAC4;
+  transition: color 425ms linear;
 }
 #linkedin-button{
   position:absolute;
@@ -696,6 +718,7 @@ hr.rounded {
   right:7.71%;
   top:57%;
   margin-top:-115px;
+  animation:fadeinLogos 1s;
 }
 #github-button{
   position:absolute;
@@ -703,6 +726,19 @@ hr.rounded {
   right:19.44%;
   top:57%;
   margin-top:-115px;
+  animation:fadeinLogos 1s;
+  
+}
+
+@keyframes fadeinLogos{
+  from{
+    opacity: 0;
+    margin-top:-90px;
+  }
+  to{
+    opacity: 1;
+    margin-top:-115px;
+  }
 }
 
 #mobile-about-me{
@@ -727,16 +763,17 @@ hr.rounded {
 }
 
 #testcard{
-  font-family:'Poppins';
-  font-size: 1.35em;
-  line-height: 115%;
+  font-family:Inter;
+  font-size: 1.5em;
+  line-height: 110%;
+  font-weight: 590;
 }
 
 .github-tag-item{
-  width: 100px;
+  width: 90px;
   text-align: center;
   font-family: 'Poppins', 'sans-serif';
-  border-radius: 12px;
+  border-radius: 9px;
   background: linear-gradient(90deg, rgba(193,172,201,1) 0%, rgba(203,180,212,1) 53%, rgba(193,172,201,1) 100%);
 
 }
@@ -752,10 +789,10 @@ span svg{
 }
 
 .tag-font{
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 .github-tag-font{
-  font-size:0.9em;
+  font-size:0.85em;
   text-decoration: underline;
 }
 
@@ -768,17 +805,417 @@ span svg{
   vertical-align: middle;
   color: #000000;
   z-index: 200000;
-  background-color: #FFFFFF;
+  background-color: #Fafafa;
 }
 
+
+/*================== ABOUT PAGE *===================*/
+
+/*Resume Button */
+
+
+@media (max-width:2000px){
+  #first-paragraph{
+    position: absolute;
+    width: 38%;
+    height: 423px;
+    left: calc(47vw + 35px);
+    top:218px;
+    font-family: Inter;
+    font-size: 18px;
+    border: none;
+  }
+  #main-image{
+    position: absolute;
+    left: calc(23vw);
+    top:175px;
+    border-radius: 100%;
+    height:319px;
+    width:334px;
+  }
+
+  #resume-button{
+    position: absolute;
+    border:2px solid #41AAC4;
+    top:534px;
+    left: calc(23vw  + 80px);
+    width:171px;
+    height: 68px;
+    border-radius: 12px;
+    text-align:center;
+    vertical-align: middle;
+    transition: background 200ms ease;
+  }
+
+  #resume-button:hover{
+    background:#41AAC4;
+    transition: background 200ms linear;
+  }
+
+  #resume-text{
+    display: relative;
+    width: 100%;
+    height: 100%;
+    font-family: Inter;
+    color:#41AAC4;
+    font-size:18px;
+    padding-top: 20px;
+    transition: 200ms ease;
+  }
+
+  #resume-text:hover{
+    color:white;
+    transition: color 200ms linear;
+  }
+
+  #sec-paragraph{
+    position: absolute;
+    left:calc(18vw);
+    top:700px;
+    font-family: Inter;
+    font-size: 18px;
+    width:38%;
+  }
+
+  #sec-image{
+    position: absolute;
+    left: calc(60vw);
+    top:620px;
+    border-radius: 100%;
+    height:319px;
+    width:334px;
+  }
+
+  #about-quote{
+    position: absolute;
+    width: 60%;
+    left: 20vw;
+    background:#f0f0f0;
+    border-radius: 15px;
+    top: 1050px;
+    text-align: center;
+    height: 121px;
+  }
+  #about-quote-text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    font-family: Inter,sans-serif;
+    padding-top: 35px;
+    font-style: italic;
+    line-height: 134.77%;
+
+  }
+  #about-border{
+    margin-top:1100px;
+  }
+  #about-border hr{
+    border-top: 1px solid #e3e3e3;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #about-border-two{
+    margin-top:692px;
+  }
+  #about-border-two hr{
+    border-top: 1px solid #e3e3e3;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+ 
+  #creating{
+    position: absolute;
+    top: 1350px;
+    left: calc(21vw);
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 42px 240px;
+  }
+  #leading{
+    position: absolute;
+    top: 1350px;
+    left: calc(60vw);
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 42px 440px;
+  }
+
+  #my-mind{
+    position: absolute;
+    width: 37%;
+    height: 230px;
+    top:2100px;
+    left: calc(21vw);
+  }
+  
+  #forest-image{
+    position: absolute;
+    left: calc(60vw);
+    top:2075px;
+    border-radius: 100%;
+    height:319px;
+    width:334px;
+  }
+
+}
+@media (max-width:1378px){
+  #first-paragraph{
+    position: absolute;
+    width: 38%;
+    height: 423px;
+    left: calc(50vw + 50px);
+    top:218px;
+    font-family: Inter;
+    font-size: 18px;
+    border: none;
+  }
+  #main-image{
+    position: absolute;
+    left: calc(20vw - 10px);
+    top:175px;
+    border-radius: 100%;
+    height:319px;
+    width:334px;
+  }
+  #resume-button{
+    position: absolute;
+    border:2px solid #41AAC4;
+    top:534px;
+    left: calc(20vw + 70px);
+    width:171px;
+    height: 68px;
+    border-radius: 12px;
+    text-align:center;
+    vertical-align: middle;
+  }
+  #resume-text{
+    font-family: Inter;
+    color:#41AAC4;
+    font-size:18px;
+    padding-top: 20px;
+  }
+  #sec-paragraph{
+    position: absolute;
+    left:calc(16vw);
+    top:700px;
+    font-family: Inter;
+    font-size: 18px;
+    width:38%;
+  }
+  #about-quote{
+    height: 130px;
+  }
+  #about-quote-text{
+    padding-top: 20px;
+  }
+  #creating{
+    position: absolute;
+    top: 1350px;
+    left: calc(10vw);
+    margin-left: -50px;
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 42px 240px;
+  }
+  #leading{
+    position: absolute;
+    top: 1350px;
+    left: calc(57vw);
+    display: grid;
+    margin-left: -40px;
+    grid-template-columns: 450px;
+    grid-template-rows: 42px 440px;
+  }
+  #my-mind{
+    position: absolute;
+    width: 37%;
+    height: 230px;
+    top:2100px;
+    left: calc(15vw);
+  }
+}
+
+
+@media (max-width:1000px){
+  #first-paragraph{
+    position: absolute;
+    width: 38%;
+    height: 423px;
+    left: calc(50vw + 35px);
+    top:218px;
+    font-family: Inter;
+    font-size: 18px;
+    border: none;
+  }
+  #main-image{
+    position: absolute;
+    left: calc(20vw  - 100px);
+    top:175px;
+    border-radius: 100%;
+    height:319px;
+    width:334px;
+  }
+  #resume-button{
+    position: absolute;
+    border:2px solid #41AAC4;
+    top:534px;
+    left: calc(20vw - 20px);
+    width:171px;
+    height: 68px;
+    border-radius: 12px;
+    text-align:center;
+    vertical-align: middle;
+  }
+  #resume-text{
+    font-family: Inter;
+    color:#41AAC4;
+    font-size:18px;
+    padding-top: 20px;
+  }
+  #sec-paragraph{
+    position: absolute;
+    left:calc(10vw);
+    top:700px;
+    font-family: Inter;
+    font-size: 18px;
+    width:38%;
+  }
+  #about-quote{
+    top:1100px;
+    height: 130px;
+  }
+  #about-quote-text{
+    padding-top: 20px;
+  }
+
+  #creating{
+    position: absolute;
+    top: 1350px;
+    left: 50%;
+    margin-left: -225px;
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 42px 240px;
+  }
+  #leading{
+    position: absolute;
+    top: 1700px;
+    left: 50%;
+    margin-left: -225px;
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 42px 440px;
+  }
+
+  #about-border-two{
+    margin-top:985px;
+  }
+  #my-mind{
+    top:2675px;
+    left: 50%;
+    margin-left: -140px;
+  }
+
+  #forest-image{
+    position: absolute;
+    left: 50%;
+    margin-left:-160px;
+    top:2320px;
+    border-radius: 100%;
+    height:319px;
+    width:334px;
+  }
+
+}
+
+@media (max-width:750px){
+  #first-paragraph{
+    top:670px;
+    left:10%;
+    width:85%;
+  }
+  #main-image{
+    position: absolute;
+    left:50%;
+    margin-left:-150px;
+    top:195px;
+    border-radius: 100%;
+  }
+  #resume-button{
+    left:50%;
+    margin-left:-70px;
+    top:550px;
+  }
+  #sec-paragraph{
+    position: absolute;
+    left:10%;
+    top:1300px;
+    font-family: Inter;
+    font-size: 18px;
+    width:85%;
+  }
+  #sec-image{
+    position: absolute;
+    align-items: center;
+    left:50%;
+    margin-left:-150px;
+    top:950px;
+    border-radius: 100%;
+  }
+  #about-quote{
+    position: absolute;
+    top: 1550px;
+    height: 130px;
+  }
+  #about-border{
+    margin-top:1600px;
+  }
+  #creating{
+    position: absolute;
+    top: 1850px;
+    left: 50%;
+    margin-left: -225px;
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 42px 240px;
+  }
+  #leading{
+    position: absolute;
+    top: 2200px;
+    left: 50%;
+    margin-left: -225px;
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 42px 440px;
+  }
+  #my-mind{
+    top:3200px;
+    left: 50%;
+    margin-left: -100px;
+  }
+  #forest-image{
+    position: absolute;
+    left: 50%;
+    margin-left:-160px;
+    top:2850px;
+    border-radius: 100%;
+    height:319px;
+    width:334px;
+  }
+}
 
 /*================== 1800 max pixels *===================*/
 @media (max-width:1800px){
   #opening-intro{
-    font-family: Poppins;
+    font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 96px;
+    font-size: 65px;
+    letter-spacing: 2px;
+  
   }
   #opening-intro-mobile{
     display: none;
@@ -816,10 +1253,9 @@ span svg{
   }
   .tag-item{
     width: 100px;
-    border: 1px solid;
     text-align: center;
     font-family: 'Poppins', 'sans-serif';
-    border-radius: 12px;
+    border-radius: 5px;
   }
 }
 
@@ -829,13 +1265,15 @@ span svg{
   #index-page{
     position: relative;
     height: 100%;
-    background-color: #f2f2f2;
+    background-color: #FaFaFa;
   }
   #opening-intro{
-    font-family: Poppins;
+    font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 96px;
+    font-size: 75px;
+    letter-spacing: 0px;
+    font-weight: 700;
   }
   #opening-intro-mobile{
     display: none;
@@ -844,7 +1282,7 @@ span svg{
     display: grid;
     grid-template-columns: 450px 450px;
     grid-template-rows: 450px 450px;
-    gap:65px 50px;
+    gap:70px 75px;
     margin-top: 5%;
     margin-bottom: 2%;
     margin-left: 4%;
@@ -854,9 +1292,10 @@ span svg{
 
   .portfolio-item{
     height: 450px;
-    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.20), -2px -2px 2px rgba(0, 0, 0, 0.20);
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.15), -2px -2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 9px;
     overflow: hidden;
+    background:#f2f2f2;
   }
 
   .portfolio-item-grid{
@@ -866,19 +1305,19 @@ span svg{
 
   .tag-table{
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 28px 28px;
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: 26px 26px;
     margin-top: 10px;
-    margin-left: 6px;
+    margin-left: 20px;
     margin-right: 10px;
-    gap: 10px;
+    gap: 7px;
   }
 
   .tag-item{
-    width: 100px;
+    width: 70px;
     text-align: center;
-    font-family: 'Poppins', 'sans-serif';
-    background:#D4D4D4
+    font-family: 'Inter', 'sans-serif';
+    background:#d9d9d9
   }
 
   #portfolio-display{
