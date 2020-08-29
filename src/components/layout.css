@@ -775,7 +775,6 @@ svg{
   font-family: 'Poppins', 'sans-serif';
   border-radius: 9px;
   background: linear-gradient(90deg, rgba(193,172,201,1) 0%, rgba(203,180,212,1) 53%, rgba(193,172,201,1) 100%);
-
 }
 
 .empty-tag-item{
@@ -815,20 +814,30 @@ span svg{
 
 
 @media (max-width:2000px){
+  #about-me-page{
+    background:'#fafafa';
+    height: 2440px;
+  }
   #first-paragraph{
     position: absolute;
-    width: 38%;
+    width: 43%;
     height: 423px;
-    left: calc(47vw + 35px);
+    left: calc(47vw + 30px);
     top:218px;
     font-family: Inter;
     font-size: 18px;
     border: none;
   }
+  #first-par-name{
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 134%;
+  }
   #main-image{
     position: absolute;
-    left: calc(23vw);
-    top:175px;
+    left: calc(18vw);
+    top:220px;
     border-radius: 100%;
     height:319px;
     width:334px;
@@ -837,8 +846,8 @@ span svg{
   #resume-button{
     position: absolute;
     border:2px solid #41AAC4;
-    top:534px;
-    left: calc(23vw  + 80px);
+    top:570px;
+    left: calc(18vw  + 80px);
     width:171px;
     height: 68px;
     border-radius: 12px;
@@ -871,7 +880,7 @@ span svg{
   #sec-paragraph{
     position: absolute;
     left:calc(18vw);
-    top:700px;
+    top:800px;
     font-family: Inter;
     font-size: 18px;
     width:38%;
@@ -879,8 +888,8 @@ span svg{
 
   #sec-image{
     position: absolute;
-    left: calc(60vw);
-    top:620px;
+    left: calc(62vw);
+    top:700px;
     border-radius: 100%;
     height:319px;
     width:334px;
@@ -917,7 +926,7 @@ span svg{
     margin-right: 5%;
   }
   #about-border-two{
-    margin-top:692px;
+    margin-top:482px;
   }
   #about-border-two hr{
     border-top: 1px solid #e3e3e3;
@@ -925,48 +934,61 @@ span svg{
     margin-left: 5%;
     margin-right: 5%;
   }
+
+  #positionSummary{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:1300px;
+    width: 100%;
+    justify-content: center;
+    height: 400px;
+  }
  
   #creating{
-    position: absolute;
-    top: 1350px;
-    left: calc(21vw);
     display: grid;
-    grid-template-columns: 450px;
-    grid-template-rows: 42px 240px;
+    grid-template-columns: 420px;
+    grid-template-rows: 42px 150px;
   }
   #leading{
-    position: absolute;
-    top: 1350px;
-    left: calc(60vw);
     display: grid;
-    grid-template-columns: 450px;
-    grid-template-rows: 42px 440px;
+    grid-template-columns: 420px;
+    grid-template-rows: 42px 420px;
   }
 
   #my-mind{
     position: absolute;
-    width: 37%;
+    width: 34%;
     height: 230px;
-    top:2100px;
+    top:1780px;
     left: calc(21vw);
   }
   
   #forest-image{
     position: absolute;
     left: calc(60vw);
-    top:2075px;
+    top:1760px;
     border-radius: 100%;
     height:319px;
     width:334px;
+  }
+
+  #ending-para{
+    position: absolute;
+    width:46%;
+    height: 150px;
+    left: calc(21vw);
+    top:2140px;
+    font-family: Inter, sans-serif;
   }
 
 }
 @media (max-width:1378px){
   #first-paragraph{
     position: absolute;
-    width: 38%;
+    width: 43%;
     height: 423px;
-    left: calc(50vw + 50px);
+    left: calc(49vw + 30px);
     top:218px;
     font-family: Inter;
     font-size: 18px;
@@ -974,8 +996,8 @@ span svg{
   }
   #main-image{
     position: absolute;
-    left: calc(20vw - 10px);
-    top:175px;
+    left: calc(15vw);
+    top:220px;
     border-radius: 100%;
     height:319px;
     width:334px;
@@ -983,8 +1005,8 @@ span svg{
   #resume-button{
     position: absolute;
     border:2px solid #41AAC4;
-    top:534px;
-    left: calc(20vw + 70px);
+    top:570px;
+    left: calc(17vw + 60px);
     width:171px;
     height: 68px;
     border-radius: 12px;
@@ -997,54 +1019,78 @@ span svg{
     font-size:18px;
     padding-top: 20px;
   }
-  #sec-paragraph{
-    position: absolute;
-    left:calc(16vw);
+
+  #sec-image{
     top:700px;
-    font-family: Inter;
-    font-size: 18px;
-    width:38%;
+    left:calc(60vw)
   }
+  #sec-paragraph{
+    top:800px;
+    left:calc(15vw)
+  }
+
   #about-quote{
     height: 130px;
+    top:1110px
   }
   #about-quote-text{
     padding-top: 20px;
   }
-  #creating{
+
+  #about-border{
+    margin-top: 1180px;
+  }
+  #positionSummary{
+    display: flex;
+    flex-direction: row;
     position: absolute;
-    top: 1350px;
-    left: calc(10vw);
-    margin-left: -50px;
+    top:1380px;
+    width: 100%;
+    justify-content: center;
+    height: 400px;
+  }
+ 
+  #creating{
     display: grid;
-    grid-template-columns: 450px;
-    grid-template-rows: 42px 240px;
+    grid-template-columns: 420px;
+    grid-template-rows: 42px 150px;
   }
   #leading{
-    position: absolute;
-    top: 1350px;
-    left: calc(57vw);
     display: grid;
-    margin-left: -40px;
-    grid-template-columns: 450px;
-    grid-template-rows: 42px 440px;
+    grid-template-columns: 420px;
+    grid-template-rows: 42px 400px;
   }
   #my-mind{
     position: absolute;
-    width: 37%;
+    width: 34%;
     height: 230px;
-    top:2100px;
-    left: calc(15vw);
+    top:1850px;
+    left: calc(18vw);
+  }
+  #forest-image{
+    left: calc(57vw);
+    top:1835px;
+  }
+  #ending-para{
+    position: absolute;
+    width:46%;
+    height: 150px;
+    left: calc(18vw);
+    top:2200px;
+    font-family: Inter, sans-serif;
   }
 }
 
 
 @media (max-width:1000px){
+  #about-me-page{
+    height: 3000px;
+  }
   #first-paragraph{
     position: absolute;
-    width: 38%;
+    width: 44%;
     height: 423px;
-    left: calc(50vw + 35px);
+    left: calc(47vw + 35px);
     top:218px;
     font-family: Inter;
     font-size: 18px;
@@ -1052,8 +1098,8 @@ span svg{
   }
   #main-image{
     position: absolute;
-    left: calc(20vw  - 100px);
-    top:175px;
+    left: calc(6vw);
+    top:220px;
     border-radius: 100%;
     height:319px;
     width:334px;
@@ -1061,8 +1107,8 @@ span svg{
   #resume-button{
     position: absolute;
     border:2px solid #41AAC4;
-    top:534px;
-    left: calc(20vw - 20px);
+    top:570px;
+    left: calc(6vw + 75px);
     width:171px;
     height: 68px;
     border-radius: 12px;
@@ -1077,82 +1123,133 @@ span svg{
   }
   #sec-paragraph{
     position: absolute;
-    left:calc(10vw);
-    top:700px;
+    left:calc(8vw);
+    top:890px;
     font-family: Inter;
     font-size: 18px;
     width:38%;
   }
+  #sec-image{
+    top:800px;
+    left: calc(54vw);
+  }
   #about-quote{
-    top:1100px;
+    top:1180px;
     height: 130px;
   }
   #about-quote-text{
     padding-top: 20px;
   }
 
-  #creating{
-    position: absolute;
-    top: 1350px;
-    left: 50%;
-    margin-left: -225px;
-    display: grid;
-    grid-template-columns: 450px;
-    grid-template-rows: 42px 240px;
-  }
-  #leading{
-    position: absolute;
-    top: 1700px;
-    left: 50%;
-    margin-left: -225px;
-    display: grid;
-    grid-template-columns: 450px;
-    grid-template-rows: 42px 440px;
+  #about-border{
+    margin-top:1250px;
   }
 
-  #about-border-two{
-    margin-top:985px;
+  #positionSummary{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:1420px;
+    width: 100%;
+    justify-content: center;
+    height: 650px;
+    align-items: center;
   }
+
+  #creating{
+    display: grid;
+    grid-template-columns: 420px;
+    grid-template-rows: 42px 150px;
+  }
+  #leading{
+    display: grid;
+    grid-template-columns: 420px;
+    grid-template-rows: 42px 300px;
+  }
+  #about-border-two{
+    margin-top:650px;
+  }
+
+  #ending-component{
+    position: absolute;
+    top: 2135px;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 370px 280px 195px;
+    height: 900px;
+    justify-items: center;
+  }
+
+  
   #my-mind{
-    top:2675px;
-    left: 50%;
-    margin-left: -140px;
+    position: relative;
+    top:0px;
+    left: 0;
+    width:100%;
+    height: 100%;
+    margin-left: 0;
+    padding-left: 23%;
+    padding-right: 17%;
+  }
+  #last-img{
+    width:100%;
+    text-align: center;
   }
 
   #forest-image{
-    position: absolute;
-    left: 50%;
-    margin-left:-160px;
-    top:2320px;
+    position: relative;
+    left: 0;
+    margin-left:0;
+    top:0px;
     border-radius: 100%;
     height:319px;
     width:334px;
   }
-
+  #ending-para{
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    top:0px;
+    width:100%;
+    height: 100%;
+    padding-left: 23%;
+    padding-right: 17%;
+  }
 }
 
 @media (max-width:750px){
+  #about-me-page{
+    background:'#fafafa';
+    height: 3650px;
+  }
   #first-paragraph{
     top:670px;
-    left:10%;
+    left:9%;
     width:85%;
   }
+  #first-par-name{
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  }
+
   #main-image{
     position: absolute;
     left:50%;
-    margin-left:-150px;
+    margin-left:-165px;
     top:195px;
     border-radius: 100%;
   }
   #resume-button{
     left:50%;
-    margin-left:-70px;
+    margin-left:-85px;
     top:550px;
   }
   #sec-paragraph{
     position: absolute;
-    left:10%;
-    top:1300px;
+    left:9%;
+    top:1525px;
     font-family: Inter;
     font-size: 18px;
     width:85%;
@@ -1161,49 +1258,83 @@ span svg{
     position: absolute;
     align-items: center;
     left:50%;
-    margin-left:-150px;
-    top:950px;
+    margin-left:-165px;
+    top:1150px;
     border-radius: 100%;
   }
   #about-quote{
     position: absolute;
-    top: 1550px;
+    top: 1650px;
     height: 130px;
   }
   #about-border{
-    margin-top:1600px;
+    margin-top:1700px;
   }
-  #creating{
+
+  #positionSummary{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 1850px;
-    left: 50%;
-    margin-left: -225px;
+    top:1950px;
+    width: 100%;
+    justify-content: center;
+    height: 650px;
+    align-items: center;
+  }
+ 
+  #creating{
     display: grid;
-    grid-template-columns: 450px;
-    grid-template-rows: 42px 240px;
+    grid-template-columns: 420px;
+    grid-template-rows: 42px 150px;
   }
   #leading{
-    position: absolute;
-    top: 2200px;
-    left: 50%;
-    margin-left: -225px;
     display: grid;
-    grid-template-columns: 450px;
-    grid-template-rows: 42px 440px;
+    grid-template-columns: 420px;
+    grid-template-rows: 42px 400px;
   }
-  #my-mind{
-    top:3200px;
-    left: 50%;
-    margin-left: -100px;
-  }
-  #forest-image{
+  #ending-component{
     position: absolute;
-    left: 50%;
-    margin-left:-160px;
-    top:2850px;
+    top: 2620px;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 370px 375px 195px;
+    height: 900px;
+    justify-items: center;
+  }
+
+  #my-mind{
+    position: relative;
+    top:0px;
+    left: 0;
+    width:100%;
+    height: 100%;
+    margin-left: 0;
+    padding-left: 24%;
+    padding-right: 18%;
+  }
+  #last-img{
+    width:100%;
+    text-align: center;
+  }
+
+  #forest-image{
+    position: relative;
+    left: 0;
+    margin-left:0;
+    top:0px;
     border-radius: 100%;
     height:319px;
     width:334px;
+  }
+  #ending-para{
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    top:0px;
+    width:100%;
+    height: 100%;
+    padding-left: 24%;
+    padding-right: 18%;
   }
 }
 

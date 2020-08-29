@@ -38,10 +38,14 @@ const Intro = ({ children }) => {
       
       <div id = "button-cloud">
         <div id = "linkedin-button">
-          <IoLogoLinkedin />
+          <a style={{color:'inherit'}}href="https://www.linkedin.com/in/briandavid8/" target="_blank" rel="noopener noreferrer">
+            <IoLogoLinkedin />
+          </a>
         </div>
         <div id="github-button">
+          <a style={{color:'inherit'}} href="https://github.com/xbriandavid" target="_blank" rel="noopener noreferrer">
           <IoLogoGithub />
+          </a>
         </div>
       </div>
       <div id ="mobile-about-me">

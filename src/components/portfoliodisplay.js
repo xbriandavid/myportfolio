@@ -43,7 +43,12 @@ const Portfoliodisplay = () => {
                                             <p class="tag-font">D3.js</p>
                                         </div>
                                         <div className="github-tag-item">
-                                            <p className="github-tag-font">Github</p>
+                                            <a className="github-tag-font" 
+                                                style={{color:'inherit'}} 
+                                                href="https://github.com/xbriandavid/covcases" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >Github</a>
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +73,13 @@ const Portfoliodisplay = () => {
                                             <p class="tag-font">CSS</p>
                                         </div>
                                         <div className="github-tag-item">
-                                            <p className="github-tag-font">Github</p>
+                                            <a className="github-tag-font"
+                                                style={{color:'inherit'}} 
+                                                href="https://github.com/xbriandavid/bayareaWater" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >
+                                                Github</a>
                                         </div>
                                     </div>
                                 </div>
@@ -89,7 +100,13 @@ const Portfoliodisplay = () => {
                                             <p class="tag-font">Java</p>
                                         </div>
                                         <div className="github-tag-item">
-                                            <p className="github-tag-font">Github</p>
+                                            <a className="github-tag-font"
+                                                style={{color:'inherit'}} 
+                                                href="https://github.com/xbriandavid/PredPreySim" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >
+                                                Github</a>
                                         </div>
                                     </div>
                                 </div>
