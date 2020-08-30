@@ -73,13 +73,12 @@ const Portfoliodisplay = () => {
                                             <p class="tag-font">CSS</p>
                                         </div>
                                         <div className="github-tag-item">
-                                            <a className="github-tag-font"
+                                            <a className="github-tag-font" 
                                                 style={{color:'inherit'}} 
-                                                href="https://github.com/xbriandavid/bayareaWater" 
+                                                href="https://github.com/xbriandavid/covcases" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
-                                            >
-                                                Github</a>
+                                            >Github</a>
                                         </div>
                                     </div>
                                 </div>
@@ -101,6 +100,7 @@ const Portfoliodisplay = () => {
                                         </div>
                                         <div className="github-tag-item">
                                             <a className="github-tag-font"
+                                                style={{color:'inherit'}} 
                                                 href="https://github.com/xbriandavid/PredPreySim" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
