@@ -5,8 +5,8 @@ import "./layout.css"
 
 const Header = ({navLabel, toAddress}) => (
   <header>
-    <div class = "grid">
-      <div class = "fillerDiv"></div>
+    <div className = "grid">
+      <div className = "fillerDiv"></div>
       <div id="about-me-link">
         <Link to={toAddress} style={{textDecoration:'none'}}>
         <h3 id="about-link">{navLabel}</h3>

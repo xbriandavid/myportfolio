@@ -635,7 +635,7 @@ header{
   display: grid;
   grid-template-columns: 85% 15%;
   min-width: 600px;
-  margin-top: 15px;
+  padding-top: 20px;
 }
 
 #about-me-link{

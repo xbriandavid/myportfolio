@@ -27,7 +27,7 @@ const about = () => {
 
             </div>
             <div id = "first-img-container">
-                <img id="main-image" src={mainphoto}></img>
+                <img id="main-image" src={mainphoto} alt="peace sign under a number 2"></img>
             </div>
             <a id = "resume-button" href = '../downloads/BrianDavidResume.pdf' style={{color:'inherit', textDecoration:'none'}} download>
                 <div id="resume-text">
@@ -41,7 +41,7 @@ const about = () => {
                 </p>
             </div>
             <div id = "sec-img-container">
-                <img id="sec-image" src={secphoto}></img>
+                <img id="sec-image" src={secphoto} alt="Me teaching a pyhton class"></img>
             </div>
             <div id="about-quote">
                 <p id = "about-quote-text">
@@ -80,7 +80,7 @@ const about = () => {
             </div>
             <div id = "ending-component">
                 <div id = "last-img">
-                    <img id="forest-image" src={tree}></img>
+                    <img id="forest-image" src={tree} alt="Calming Redwood Trees"></img>
                 </div>
                 <div id = "my-mind">
                     <p style = {{fontFamily:'Inter', 
