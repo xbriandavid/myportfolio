@@ -18,7 +18,7 @@ const Portfoliodisplay = () => {
                             
                             </div>
                             <div className="protfolio-item-desc">
-                                <div style={{paddingLeft:'1.5em', marginTop:'12px'}}>
+                                <div id="covid-project">
                                     <span id = "testcard" role="img" aria-label="emoji">Exploring Daily Changes in Bay Area Covid-19 Cases
                                     </span>
                                 </div>
@@ -59,7 +59,7 @@ const Portfoliodisplay = () => {
                                     <img src={waterProject} alt="Analyzing water constitutents" height="300" width="450"/>
                                 </div>
                                 <div className="protfolio-item-desc">
-                                    <div style={{paddingLeft:'1em', marginTop:'12px'}}>
+                                    <div id = "water-project">
                                         <span id = "testcard" role="img" aria-label="emoji">Analyzing Sediment Constituents in the San Francisco Bay
                                         </span>
                                     </div>
@@ -88,7 +88,7 @@ const Portfoliodisplay = () => {
                                     <img src={predpreysim} alt="Predator and Prey simulation inside a GUI" height="300" width="450"/>
                                 </div>
                                 <div className="protfolio-item-desc">
-                                    <div style={{paddingLeft:'1.5em', marginTop:'12px'}}>
+                                    <div id = "pred-prey-project">
                                         <span id = "testcard" role="img" aria-label="emoji">Modeling a Predator and Prey Simulation
                                         </span>
                                     </div>
@@ -115,7 +115,7 @@ const Portfoliodisplay = () => {
                                     <img src={devinnunes} alt="Showing economic issues in CA-22" height="300" width="450"/>
                                 </div>
                                 <div className="protfolio-item-desc">
-                                    <div style={{paddingLeft:'1.5em', marginTop:'12px'}}>
+                                    <div id = "ca-22-project">
                                         <span id = "testcard" role="img" aria-label="emoji">CA-22 2018 Election
                                         </span>
                                     </div>

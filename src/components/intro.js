@@ -49,7 +49,9 @@ const Intro = ({ children }) => {
         </div>
       </div>
       <div id ="mobile-about-me">
-        <span>About me</span>
+        <a href="/about/" style={{textDecoration: "none", color:'#000000'}}>
+          <span>About me</span>
+        </a>
       </div>
     </div>
   )

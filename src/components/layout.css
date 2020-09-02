@@ -808,6 +808,24 @@ span svg{
   background-color: #Fafafa;
 }
 
+/*================== Portfolio Cards ================*/
+#covid-project{
+  padding-Left:1.5em;
+  margin-Top:12px;
+}
+#water-project{
+  padding-Left:1em;
+  margin-Top:12px
+}
+#pred-prey-project{
+  padding-Left:1.5em;
+  margin-Top:12px
+}
+#ca-22-project{
+  padding-Left:1.5em;
+  margin-Top:12px
+}
+
 
 /*================== ABOUT PAGE *===================*/
 
@@ -1495,23 +1513,25 @@ span svg{
     top: calc(15%);
     margin-top: 0px;
     height: 37%;
+    animation: none;
   }
 
   #opening-desc{
     width:100vw;
     height:130px;
     text-align:left;
-    padding-left: 3%;
+    padding-left: 6%;
   }
 
   #name-display{
     width:100vw;
     height:21%;
-    padding-left: 3%;
+    padding-left: 6%;
+    font-family: Inter, Sans;
   }
 
   #opening-caption{
-    font-family: Poppins;
+    font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1524,7 +1544,7 @@ span svg{
 
   #opening-intro-mobile{
     display: block;
-    font-family: Poppins;
+    font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -1535,16 +1555,18 @@ span svg{
     left:calc(26.57%);
     top:57%;
     top: calc(100% - 15%);
+    animation: none;
   }
 
   #linkedin-button{
     position:absolute;
     left: calc(56.04%);
     top: calc(100% - 15%);
+    animation:none;
   }
 
   #mobile-about-me{
-    font-family: Poppins;
+    font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1575,9 +1597,14 @@ span svg{
 
   .portfolio-item{
     height: 450px;
-    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.30), -2px -2px 2px rgba(0, 0, 0, 0.30);
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.15), -2px -2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 9px;
     overflow: hidden;
+  }
+
+  #testcard{
+    font-family: Inter;
+    font-size: 1.3em;
   }
 
   .tag-table{
@@ -1585,21 +1612,38 @@ span svg{
     grid-template-columns: 60px 60px 60px 60px;
     grid-template-rows: 28px 28px;
     margin-top: 10px;
-    margin-left: 6px;
+    margin-left: 8px;
     margin-right: 10px;
     gap: 10px;
   }
   .tag-item{
     width: 60px;
     text-align: center;
-    font-family: 'Poppins', 'sans-serif';
-    background:#D4D4D4
+    font-family: 'Inter', 'sans-serif';
   }
   .tag-font{
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
   .github-tag-font{
     font-size:0.9em;
     text-decoration: underline;
   }
+
+  /*================== Portfolio Cards ================*/
+  #covid-project{
+  padding-Left:0.8em;
+  margin-Top: 14px;
+  }
+  #water-project{
+    padding-Left:0.8em;
+    margin-Top:14px
+  }
+  #pred-prey-project{
+    padding-Left:0.8em;
+    margin-Top:14px
+  }
+  #ca-22-project{
+    padding-Left:0.8em;
+    margin-Top:14px
+  } 
 }
