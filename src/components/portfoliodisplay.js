@@ -73,7 +73,7 @@ const Portfoliodisplay = () => {
                                         <div className="github-tag-item">
                                             <a className="github-tag-font" 
                                                 style={{color:'inherit'}} 
-                                                href="https://github.com/xbriandavid/covcases" 
+                                                href="https://github.com/xbriandavid/bayareaWater" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
                                             >Github</a>

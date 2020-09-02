@@ -706,12 +706,12 @@ svg{
   color: black;
   font-size: 24px;
   font-family: 'Inter', 'sans-serif';
-  transition: 425ms ease
+  transition: 300ms ease
 }
 
 #about-link:hover{
   color:#41AAC4;
-  transition: color 425ms linear;
+  transition: color 300ms linear;
 }
 #linkedin-button{
   position:absolute;
