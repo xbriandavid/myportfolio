@@ -659,7 +659,7 @@ header{
   top:54%;
   margin-top:-110px;
   left:100px;
-  animation: fadein 1s;
+  animation: fadein 0.65s;
 }
 @keyframes fadein{
   from{
@@ -719,7 +719,7 @@ svg{
   right:7.71%;
   top:57%;
   margin-top:-115px;
-  animation:fadeinLogos 1s;
+  animation:fadeinLogos 0.65s;
 }
 #github-button{
   position:absolute;
@@ -727,7 +727,7 @@ svg{
   right:19.44%;
   top:57%;
   margin-top:-115px;
-  animation:fadeinLogos 1s;
+  animation:fadeinLogos 0.65s;
   
 }
 
@@ -777,6 +777,13 @@ svg{
   border-radius: 9px;
   background: linear-gradient(90deg, rgba(193,172,201,1) 0%, rgba(203,180,212,1) 53%, rgba(193,172,201,1) 100%);
 }
+.tableau-tag-item{
+  width: 90px;
+  text-align: center;
+  font-family: 'Poppins', 'sans-serif';
+  border-radius: 9px;
+  background: linear-gradient(90deg, rgba(99,156,203,1) 0%, rgba(140,173,212,1) 53%, rgba(122,149,168,1) 100%);
+}
 
 .empty-tag-item{
   width: 71px;
@@ -812,6 +819,10 @@ span svg{
 #covid-project{
   padding-Left:1.5em;
   margin-Top:12px;
+}
+#hiking-project{
+  padding-Left:1em;
+  margin-Top:12px
 }
 #water-project{
   padding-Left:1em;
@@ -1358,12 +1369,12 @@ span svg{
 }
 
 /*================== 1800 max pixels *===================*/
-@media (max-width:1800px){
+
   #opening-intro{
     font-family: Inter;
     font-style: normal;
-    font-weight: normal;
-    font-size: 65px;
+    font-weight: 700;
+    font-size: 75px;
     letter-spacing: 2px;
   
   }
@@ -1388,26 +1399,31 @@ span svg{
   }
   .portfolio-item{
     height: 450px;
-    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.30), -2px -2px 2px rgba(0, 0, 0, 0.30);
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.15), -2px -2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 9px;
     overflow: hidden;
+    background:#f2f2f2;
   }
   .tag-table{
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 28px 28px;
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: 26px 26px;
     margin-top: 10px;
-    margin-left: 6px;
+    margin-left: 20px;
     margin-right: 10px;
-    gap: 10px;
+    gap: 7px;
   }
   .tag-item{
-    width: 100px;
+    width: 70px;
     text-align: center;
-    font-family: 'Poppins', 'sans-serif';
-    border-radius: 5px;
+    font-family: 'Inter', 'sans-serif';
+    background:#d9d9d9
   }
-}
+  #portfolio-page{
+    background: #Fafafa;
+    height: 1125px;
+  }
+
 
 
 /*================== 1600 max pixels *===================*/
@@ -1470,8 +1486,12 @@ span svg{
     background:#d9d9d9
   }
 
+  #portfolio-page{
+    background: #Fafafa;
+    height: 1650px;
+  }
   #portfolio-display{
-    height: 1200px;
+    height: 1600px;
     display: grid;
   }
 

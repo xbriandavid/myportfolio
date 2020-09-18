@@ -3,9 +3,10 @@ import covid from '../images/covprj.png'
 import waterProject from '../images/waterprj.png'
 import predpreysim from '../images/predprayprj.png'
 import devinnunes from '../images/devinnunes.png'
+import hikes from '../images/hikes.png'
 const Portfoliodisplay = () => {
     return (
-        <div style = {{background:'#fafafa'}}>
+        <div id="portfolio-page">
             <hr className="rounded"/>
             <div id="portfolio-display">
                 <div id = "portfolio-grid">
@@ -56,7 +57,40 @@ const Portfoliodisplay = () => {
                     <div className="portfolio-item">
                         <div className="portfolio-item-grid">
                                 <div>
-                                    <img src={waterProject} alt="Analyzing water constitutents" height="300" width="450"/>
+                                    <a href="https://public.tableau.com/profile/brian.david3011#!/vizhome/new_bayareahiking/Poster" target="_blank" rel="noopener noreferrer">
+                                        <img src={hikes} alt="Examining bay area hikes" height="300" width="450"/>
+                                    </a>
+                                </div>
+                                <div className="protfolio-item-desc">
+                                    <div id = "hiking-project">
+                                        <span id = "testcard" role="img" aria-label="emoji">Examning The Popular Hikes of the Bay Area from Alltrails
+                                        </span>
+                                    </div>
+                                    <div className="tag-table">
+                                        <div className="tag-item">
+                                            <p className="tag-font">Python</p>
+                                        </div>
+                                        <div className="tableau-tag-item">
+                                            <p className="tag-font">Tableau</p>
+                                        </div>
+                                        <div className="github-tag-item" style={{'marginLeft':'20px'}}>
+                                            <a className="github-tag-font" 
+                                                style={{color:'inherit'}} 
+                                                href="https://github.com/xbriandavid/Webscraping-Hiking-Trails/blob/master/HikerData.ipynb" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >Github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div className="portfolio-item">
+                        <div className="portfolio-item-grid">
+                                <div>
+                                    <a href="https://github.com/xbriandavid/bayareaWater/blob/master/analysis.ipynb" target="_blank" rel="noopener noreferrer">
+                                        <img src={waterProject} alt="Analyzing water constitutents" height="300" width="450"/>
+                                    </a>
                                 </div>
                                 <div className="protfolio-item-desc">
                                     <div id = "water-project">
@@ -120,11 +154,8 @@ const Portfoliodisplay = () => {
                                         </span>
                                     </div>
                                     <div className="tag-table">
-                                        <div className="tag-item">
-                                            <p className="tag-font">Java</p>
-                                        </div>
-                                        <div className="tag-item">
-                                            <p className="tag-font">CSS</p>
+                                        <div className="tableau-tag-item">
+                                            <p className="tag-font">Tableau</p>
                                         </div>
                                         <div className="empty-tag-item">
                                             <p style = {{fontSize:'0.7em'}}></p>
