@@ -94,14 +94,7 @@ const about = () => {
                                 fontSize:'18px', 
                                 lineHeight:'134%',
                                 display:'block'}}>
-                        * Currently reading a research paper on Spanish revival architecture
-                    </p>
-                    <p style = {{fontFamily:'Inter', 
-                                fontSize:'18px', 
-                                lineHeight:'134%',
-                                display:'block'}}>
-                        * Also reading about the catostrophic danger that the Juan De Fuca plate in Washington state 
-                        can cause
+                        * Currently preparing for classes as the semester begins! 
                     </p>
                 </div>
                 <div id="ending-para">
